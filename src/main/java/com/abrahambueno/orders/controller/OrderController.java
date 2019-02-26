@@ -2,7 +2,6 @@ package com.abrahambueno.orders.controller;
 
 import com.abrahambueno.orders.model.Order;
 import com.abrahambueno.orders.repository.OrderRepository;
-import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
@@ -10,10 +9,10 @@ import org.springframework.web.bind.annotation.*;
 import java.net.URISyntaxException;
 import java.util.List;
 import java.util.Optional;
+//@Api(value = "Java Orders Application", description = "An Application that implements orders with CRUD functionality")
 
 @RestController
-@Api(value = "Java Orders Application", description = "An Application that implements orders with CRUD functionality")
-@RequestMapping(path = {}, produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(path  = {}, produces = MediaType.APPLICATION_JSON_VALUE)
 public class OrderController {
     @Autowired
     OrderRepository orderrepos;
